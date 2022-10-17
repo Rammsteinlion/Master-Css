@@ -1,0 +1,32 @@
+#menu{
+    height: 50px;
+}
+
+#menu ul{
+    text-decoration: none;
+    list-style: none;
+    line-height: 35px;
+}
+
+.item{
+  height: 150px !important;
+}
+
+footer{
+    height: 60px;
+    line-height: 50px;
+}
+
+.laretal{
+    height:250px;
+}
+
+.lateral > div{
+    height: calc(250px / 3);
+}
+
+@media (max-width: 768px){
+#menu{
+    height: auto;
+}
+}

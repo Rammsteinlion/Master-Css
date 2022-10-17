@@ -1,0 +1,75 @@
+/*
+-Mover elementos de manera horizontal: justify-content
+
+- vh que significa que ocupe todo el vertical height del tañamo
+*/
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+#layout {
+
+    display:flex;
+   /* flex-direction: row;  
+    flex-wrap: wrap;*/
+    justify-content: space-evenly;
+
+    height: 600px;
+    align-items: center;
+
+    flex-flow: row wrap;
+    border: 3px solid gray;
+    padding: 5px;
+}
+
+.caja {
+    /*Elementos flexibles adaptable al tamaño, forma de distribir el tamaño
+    flex-grow: 1;*/
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  border: 4px solid #222;
+  margin: 10px;
+  background: gray;
+  width: 130px;
+}
+
+.red {
+    /*order: 4;*/
+    /*flex-grow:5;*/
+
+    align-self: flex-start;
+  background: red;
+}
+
+.green {
+  margin-bottom: 165px;
+  background: green;
+}
+
+.blue {
+    /*Reducir su tamaño
+    flex-shrink:0;*/
+    align-self: center;  
+  background: blue;
+}
+
+.orange {
+  /*Reducir aun mas su tamaño
+  flex-grow:0;
+  flex-shrink: 0;*/
+  align-self: flex-end;
+  background:orange;
+}
+
+.purple{
+  /*que tamaño minimo pueden tener y desde hay escoge el tamaño a tener al moverse
+  flex-basis:calc((100% /  3) - 68px);
+  flex-basis: 100%;*/
+    background: purple;
+}

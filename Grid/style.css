@@ -1,0 +1,81 @@
+body{
+    font-family: sans-serif;
+    text-align: center;
+}
+
+/*=====EJERCICIO=====*/
+
+
+/*---EJEMPLO---*/
+.layout{
+    width: 1200px;
+    min-height: 600px;
+    margin: 0px auto;
+
+    /*DEFINIR EL CONTENEDOR DE GRID*/
+    display:grid;
+    /*Unidades de medida*/
+    /*grid-template-columns: repeat(2,25%) 15% 35%;*/
+    /*grid-template-columns: 25% 25% 25% 25%;*/
+    /*grid-template-columns: calc(50% - 10px) calc(50% - 10px);*/
+
+    /*Unidades de medida fraccion*/
+    grid-template-columns: repeat(3,1fr) ;
+
+    /*Columnas*/
+    grid-template-rows: repeat(2, 1fr) 3fr repeat(2, 1fr);
+    
+
+    /*eSPACIO ENTRE ELEMENTOS GRID*/
+    grid-gap: 10px;
+    padding: 10px;
+    border: 2px solid orangered;
+}
+
+.layout .caja{
+    font-size: 20px;
+    font-weight: bold;
+    color:white;
+    padding: 20px;
+    border: 4px solid #222;
+    background: gray;
+}
+
+.layout .red{
+    background:red;
+    grid-column-start: 1;
+    grid-column-end:4;
+}
+.layout .green{
+    background:green;
+    /*Expandir una fila*/
+    grid-row-start: 2;
+    grid-row-end: 6;
+}
+.layout  .blue{
+    background:blue;
+    grid-column: 2/4;
+}
+.layout .pink{
+    grid-column: 2 /2;
+    grid-row: 3/5;
+    background:pink;
+}
+
+.layout  .purple{
+    background:purple;
+    grid-row: 3/5;
+}
+.layout .linghtblue{
+    background:lightblue;
+   /* grid-column-start: 1;
+    grid-column-end:3;*/
+    
+    /*Atajo para intriducir las mismas propiedades*/
+    grid-column: 2 / 4;
+}
+
+/*/contenedor de grid*/
+
+/*Expandir  columnas
+    se hace dentro de la caja que quiero aplicar la propiedad*/

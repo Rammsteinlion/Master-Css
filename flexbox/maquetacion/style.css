@@ -1,0 +1,279 @@
+*{
+    text-decoration: none;
+    margin:0px;
+    padding:0px;
+    font-family: sans-serif;
+}
+
+#container{
+    width: 90%;
+    height: auto;
+    margin: 0px auto;
+    border: 1px solid rgba(225,225,  226, 0.8);
+    box-shadow: 0px 0px 10px #ccc;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+
+    min-height: 650px;
+}
+
+
+#header{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    align-items:center;
+
+
+    height: 120px;
+    border-bottom: 1px solid rgba(248,242,242, 0.8);
+}
+
+.logo{
+    flex-grow:1;
+    flex-basis: 65%;
+    font-family: Helvetica;    
+    font-style:italic;
+    font-weight: 900;
+    font-size: 35px;
+
+    padding: 10px;
+    margin-left: 20px;
+    color: black;
+    text-shadow: 1px 1px 0px rgb(176, 176, 176);
+    text-transform:uppercase;
+}
+
+.logo h1{
+
+    font-family: Helvetica;    
+    font-style:italic;
+    font-weight: 900;
+    font-size: 35px;
+}
+
+#menu{
+    flex-grow:1;
+    flex-basis:30%;
+    height:100%;
+    padding-right: 20px;
+}
+
+#menu > ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    list-style:none;
+}
+
+#menu a {
+    text-transform:uppercase;
+    color:#444;
+    padding:15px;
+    transition: all 400ms;
+}
+
+#menu a:hover{
+    background: #ccc;
+    color: white;
+    border-radius: 5px;
+}
+
+#content{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom:20px;
+}
+
+#proyects{
+ display:flex;   
+ flex-flow: row wrap;
+ justify-content: space-between;
+ flex-basis: 80%;
+}
+
+.proyects{
+    flex-grow: 1;
+    flex-basis:250px;
+    margin-bottom:25px;
+    margin-right: 20px;
+    border: 1px solid #ccc;
+}
+
+.proyects img{
+    width: 100%;
+}
+
+.proyect-info{
+    padding: 10px;
+}
+
+.proyect-info a{
+    font-size: 16px;
+    color: black;
+    transition: all 400ms;
+}
+
+.proyect-info a:hover{
+    color: green;
+}
+
+.proyect-info p{
+    font-size: 16px;
+    color: gray;
+}
+
+
+#aside{
+    flex-basis: 15%;
+    margin-right: 30px;
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#aside h2{
+ display: block;
+ width: 100%;
+ font-size: 18px;
+ font-weight: 100;
+ color: #444;
+ padding-bottom: 10px;
+ margin-bottom: 20px;
+ border-bottom: 1px solid rgba(213, 213, 213, 0.54);
+ text-align: center;
+}
+
+#aside ul{
+    list-style:none;
+}
+
+#aside ul li{
+    padding-bottom: 20px;
+}
+
+#aside a{
+    display:block;
+    padding: 20px;
+    text-align: center;
+    background: #eee;
+    color:#444;
+    transition: all 320ms;
+    text-transform: uppercase;
+}
+
+#aside a:hover{
+    background:#444;
+    color:#eee;
+}
+
+#footer{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+
+    height: 120px;
+    align-items: center;
+    border-top: 1px solid rgba(163, 163, 163, 0.8);
+}
+
+#footer .logo{
+    opacity: 0.6;
+    flex-basis:auto;
+    flex-grow: 1;
+    order:2;
+    text-align: right;
+    margin-right: 20px;
+}
+
+#footer .info{
+    flex-grow: 1;
+    order: 1;
+    margin-left: 20px;
+    color: #444;
+}
+
+/*Responsive*/
+
+@media (max-width: 1334px){
+
+    #header{
+        text-align:center;
+    }
+
+    #menu > ul{
+        margin-top: 20px;
+        align-items:flex-start;
+        justify-content:space-evenly;
+    }
+}
+
+
+@media (max-width: 646px){
+
+    #content{
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    #aside{
+        margin-right: 0px;
+    }
+
+    #aside ul{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content:space-between;
+    }
+
+    #aside ul li {
+        flex-grow: 1;
+        margin-left:5px;
+        margin-right:5px;
+    }
+
+
+
+    .proyects{
+        margin-right: 10px;
+        margin-left: 10px; 
+    }
+
+
+    #footer .logo{
+        flex-grow: 1;
+        order: 1;
+        flex-basis:100%;
+        text-align:center;
+        margin:0px;
+    }
+
+    #footer .info{
+        flex-grow: 1;
+        order:2;
+        margin-left: 20px;
+        color:#444;
+        flex-basis: 100%;
+        text-align: center;
+    }
+}
+
+@media only  screen and (max-width: 483px) and (min-width: 200px) {
+    #menu > ul{
+    padding: 1px 7px;
+    font-size: 13.5px;
+    margin: 0px auto;
+    }
+
+}

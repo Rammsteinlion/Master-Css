@@ -1,0 +1,108 @@
+<Doctype html>
+    <html lang="es">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, user-scalable=no"/>
+        <title>Aprendiendo Boostrap</title>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <!-- <div class="mi-web w-75 m-auto p-5 border border-danger">
+            <h1>Aprendiendo Boostrap</h1>
+            <h2>Framework para Html</h2>
+            <button type="button" class="btn btn-success btn-small">Save</button>
+           </div>-->
+
+        <div class="container border">
+            <!--Definir uuna fila-->
+            <div class="row">
+                <header id="header" class="col-12 bg-primary text-white p-4 pl-2">
+                    <h1>Curso Master de Boostrap</h1>
+                </header>
+
+                <!---No mostrar un elemento del html en el responsive-->
+                <!------d-block mostrar el menu en todos los casos-->
+                <!----para ocultarlo se utiliza d-sm-none y toca indicar en que momento -->
+                <nav id="menu" class="col-12 bg-secondary text-white p-2
+                 d-none d-sm-none d-md-block">
+                    <ul class="row w-50 ">
+                        <li class="col-xs-12 col-sm-12 col-md">Inicio</li>
+                        <li class="col-xs-12 col-sm-12 col-md">Pagina 1</li>
+                        <li class="col-xs-12 col-sm-12 col-md">Pagina 2</li>
+                        <li class="col-xs-12 col-sm-12 col-md">Pagina 3</li>
+                        <li class="col-xs-12 col-sm-12 col-md">Contanto</li>
+                    </ul>
+                </nav>
+
+                <section id="content" class="col-12">
+                    <div class="row">
+                        <section id="products" class="col-10 col-sm-10 col-md-9 col-9 border">
+                            <h2>Products</h2>
+                            <hr>
+                            <div class="items ">
+                                <div class="row"> 
+                                    <div class="item col col-lg col-md-12 col-sm-12 bg-primary m-2">Producto Uno</div>
+                                    <div class="item col col-lg col-md-12 col-sm-12 bg-secondary m-2">Producto Dos</div>
+                                    <div class="item col col-lg col-md-12 col-sm-12 bg-success m-2">Producto Tres</div>
+                                </div>
+                                <div class="row">
+                                    <div class="item col bg-primary m-2">Producto Uno</div>
+                                    <div class="item col bg-secondary m-2">Producto Dos</div>
+                                    <div class="item col bg-success m-2">Producto Tres</div>
+                                </div>
+                                <div class="row mt-5">
+                                    <div class="item col bg-warning m-2">Producto Cuarto </div>
+                                    <div class="item col bg-info m-2">Producto Quinto</div>
+                                    <div class="item col bg-dark m-2">Producto Quinto</div>
+                                </div>
+
+                                <div class="row mt-1 justify-content-center">
+                                    <div class="item col-3 bg-warning m-2">Producto Cuarto </div>
+                                    <div class="item col-3 bg-success m-2">Producto Quinto</div>
+                                </div>
+
+                                <!---offset separacion-->
+                                <div class="row">
+                                    <div class="item col-3 bg-secondary m-1">Producto</div>
+                                    <div class="item col-3 bg-danger m-1">Producto</div>
+                                    <div class="item col-3 bg-success m-1">Producto</div>
+                                    <div class="item col-3 bg-warning m-1  offset-5">Producto</div>
+                                </div>
+                            </div>
+                        </section>
+                        <aside class="col-3 border d-none d-sm-none d-md-block">
+                            <h2>Barra Lateral</h2>
+
+                            <div class="laretal row  bg-light align-items-center;">
+                                <div class="col-4 bg-primary align-self-start">
+                                    ELemento 1
+                                </div>
+
+                                <div class="col-4 bg-success align-self-center">
+                                    ELemento 2
+                                </div>
+
+                                <div class="col-4 bg-warning align-self-end">
+                                    ELemento 3
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
+                </section>
+                <footer class="col-lg-12 bg-info">
+                    Master en Css con Elkim Murillo &copy;
+                </footer>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="jquery-3.6.1.min.js"></script>
+        <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+
+        <!-----Offset-->
+    </body>
+
+    </html>

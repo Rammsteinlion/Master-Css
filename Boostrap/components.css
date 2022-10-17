@@ -1,0 +1,10 @@
+#slider{
+    height: 450px;
+    width: 700px;
+    overflow: hidden;
+}
+
+#slider img{
+    height: 450px;
+    width: 450px;
+}
